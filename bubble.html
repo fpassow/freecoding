@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script>
+		console.log('hi!');
+		function foo(e) {
+			console.log('foo');
+			console.log(e);
+		}
+		function bar(e) {
+			console.log('bar');
+			console.log(e);
+		}
+	</script>
+</head>
+<body>
+	<div id="outer" onclick="foo()">
+		<div id="inner1">
+			Inner 1
+		</div>
+		<div id="inner2" onclick="bar()">
+			Inner 2
+		</div>
+		<div id="inner3">
+			Inner 3
+		</div>
+	</div>
+</body>
+</html>
